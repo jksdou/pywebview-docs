@@ -19,5 +19,6 @@ if __name__ == "__main__":
     t = threading.Thread(target=get_current_url)
     t.start()
 
-    webview.create_window("获取当前 URL 示例", "https://pywebview.github.io/hello")
+    webview.create_window("获取当前 URL 示例",
+                          "https://pywebview.github.io/hello")
 ```

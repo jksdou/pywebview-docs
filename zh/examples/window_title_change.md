@@ -1,22 +1,27 @@
-# Window title change
+# 修改窗口标题
 
-Change window title every three seconds.
+示例说明：每三秒修改一次窗口标题。
 
 ``` python
-import webview
+# -*- coding: utf-8 -*-
+"""修改窗口标题"""
+
 import threading
 import time
+import webview
+
 
 def change_title():
-    """changes title every 3 seconds"""
-    for i in range(1, 100):
-        time.sleep(3)
-        webview.set_title("New Title #{}".format(i))
+    """每三秒执行一次"""
+    for i in range(1, 10):
+        time.sleep(1)
+        webview.set_title(u"新标题 #{}".format(i))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     t = threading.Thread(target=change_title)
     t.start()
 
-    webview.create_window('Change window title', 'https://pywebview.flowrl.com/hello')
+    webview.create_window("修改窗口标题示例",
+                          "https://pywebview.github.io/hello")
 ```

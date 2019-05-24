@@ -2,7 +2,7 @@ module.exports = {
     title: "pywebview",
     description: "Build GUI for your Python program with JavaScript, HTML, and CSS",
     themeConfig: {
-        repo: "r0x0r/pywebview",
+        repo: "pywebview/pywebview",
         base: "/",
         docsRepo: "pywebview/documents",
         docsDir: ".",

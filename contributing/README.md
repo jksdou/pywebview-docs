@@ -1,4 +1,4 @@
-Thanks for considering contributing to pywebview.
+感谢您能考虑为 pywebview 做一些力所能及的事情。
 
 Pywebview is a small-time project, which gets updated sporadically whenever time permits. Any help is more than appreciated and the best way to contribute is submitting a pull request. Bug fixes are always welcome. If you wish to submit a new feature, please create an issue and discuss it beforehand.
 
@@ -8,4 +8,4 @@ To support pywebview financially, consider becoming a patron of the project. Pyw
 
 <div class="center spc-l spc-vertical"><a href="https://www.patreon.com/bePatron?u=13226105" data-patreon-widget-type="become-patron-button"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!"/></a></div>
 
-For other ways to donate refer to the [donation](./donating.md) page.
+其他捐赠方式请参阅[捐赠](./donating.md)页面。

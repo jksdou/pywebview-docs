@@ -1,12 +1,22 @@
 
-# API
+# API 函数
 
 ## create_window
 
 ``` python
-create_window(title, url='', js_api=None, width=800, height=600, resizable=True,\
-              fullscreen=False, min_size=(200, 100), strings={}, confirm_quit=False, \
-              background_color='#FFF', debug=False, text_select=False)
+create_window(title,
+              url='',
+              js_api=None,
+              width=800,
+              height=600,
+              resizable=True,
+              fullscreen=False,
+              min_size=(200, 100),
+              strings={},
+              confirm_quit=False,
+              background_color='#FFF',
+              debug=False,
+              text_select=False)
 ```
 
 创建一个新的 _pywebview_ 窗口。首次调用此函数时将启动应用程序并占用程序主线程。您必须在单独的线程中执行您的程序逻辑。后续调用 `create_window` 将返回一个唯一窗口 `uid`，该窗口可用于引用 API 函数中的特定窗口。单窗口应用程序无需理会 `uid`，在函数调用中可以直接忽略它。
@@ -40,7 +50,11 @@ create_window(title, url='', js_api=None, width=800, height=600, resizable=True,
 ## create_file_dialog
 
 ``` python
-create_file_dialog(dialog_type=OPEN_DIALOG, directory='', allow_multiple=False, save_filename='', file_types=())`
+create_file_dialog(dialog_type=OPEN_DIALOG,
+                   directory='',
+                   allow_multiple=False,
+                   save_filename='',
+                   file_types=())
 ```
 
 创建一个打开文件 (`webview.OPEN_DIALOG`)， 打开文件夹 (`webview.FOLDER_DIALOG`) 或保存文件(`webview.SAVE_DIALOG`) 的对话框。

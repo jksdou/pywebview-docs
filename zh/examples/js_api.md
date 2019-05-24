@@ -1,8 +1,11 @@
-# Javascript API
+# JS API 示例
 
-Create an application without a HTTP server. The application uses Javascript API object to communicate between Python and Javascript. 
+示例说明：创建一个纯前端应用程序，通过对 JS API 对象的调用实现前端 JS 对 Python 的调用。
 
 ``` python
+# -*- coding: utf-8 -*-
+"""使用JS API调用Python函数"""
+
 import webview
 import threading
 import time
@@ -112,7 +115,8 @@ class Api:
         return response
 
     def doHeavyStuff(self, params):
-        time.sleep(0.1)  # sleep to prevent from the ui thread from freezing for a moment
+        # sleep to prevent from the ui thread from freezing for a moment
+        time.sleep(0.1)
         now = time.time()
         self.cancel_heavy_stuff_flag = False
         for i in range(0, 1000000):
@@ -147,5 +151,5 @@ if __name__ == '__main__':
     t.start()
 
     api = Api()
-    webview.create_window('API example', js_api=api)
+    webview.create_window('JS API 示例', js_api=api)
 ```

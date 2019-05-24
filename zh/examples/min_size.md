@@ -1,15 +1,16 @@
-# Minimum window size
+# 限制窗口最小尺寸
 
-Set minimum window dimensions.
+示例说明：设置窗口的最小尺寸。
 
 ``` python
+# -*- coding: utf-8 -*-
+"""限制窗口最小尺寸"""
+
 import webview
 
-if __name__ == '__main__':
-    # Create a resizable webview window with minimum size constraints
-    webview.create_window('Minimum window size',
-                          'https://pywebview.flowrl.com/hello',
-                          width=800, height=600,
-                          resizable=True,
-                          min_size=(400, 200))
+if __name__ == "__main__":
+    # 设置最小尺寸
+    webview.create_window("限制窗口最小尺寸示例",
+                          "https://pywebview.github.io/hello/",
+                          min_size=(400, 400))
 ```
