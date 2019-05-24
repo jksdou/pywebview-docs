@@ -1,4 +1,4 @@
-## Destroy window
+# Destroy window
 
 Programmatically destroy created window after five seconds.
 

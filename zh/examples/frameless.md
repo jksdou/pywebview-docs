@@ -1,13 +1,16 @@
-# Frameless window
+# 创建无边框窗口
 
-Create a frameless window. The window can be moved around by dragging any point.
+示例说明：创建无边框窗口。可以通过拖动任何点来移动窗口。
 
 ``` python
+# -*- coding: utf-8 -*-
+"""创建无边框窗口"""
+
 import webview
 
 
-if __name__ == '__main__':
-    webview.create_window('Frameless window',
-                          'https://pywebview.flowrl.com/hello',
+if __name__ == "__main__":
+    webview.create_window("无边框窗口示例",
+                          "https://pywebview.github.io/hello/",
                           frameless=True)
 ```

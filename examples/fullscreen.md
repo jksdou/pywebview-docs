@@ -6,6 +6,6 @@ Create a fullscreen window.
 import webview
 
 
-if __name__ == '__main__':
-    webview.create_window('Full-screen browser', 'https://pywebview.flowrl.com/hello', frameless=True)
+if __name__ == "__main__":
+    webview.create_window("Full-screen browser", "https://pywebview.flowrl.com/hello", fullscreen=True)
 ```

@@ -1,10 +1,16 @@
-# Debugging
+# 调试模式
 
-To open up debugging console, right click on an element and select Inspect.
+示例说明：要打开调试控制台，请在窗口视图内右键单击元素，选择 `Inspect`。
+
 
 ``` python
+# -*- coding: utf-8 -*-
+"""要打开调试控制台，请在窗口视图内右键单击元素，选择 `Inspect`。"""
+
 import webview
 
-if __name__ == '__main__':
-    webview.create_window('Debug window', 'https://pywebview.flowrl.com/hello', debug=True)
+if __name__ == "__main__":
+    webview.create_window("调试模式示例",
+                          "https://pywebview.github.io/hello/",
+                          debug=True)
 ```
